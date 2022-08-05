@@ -1,0 +1,11 @@
+.signup {
+  height: 40rem;
+  background: -webkit-linear-gradient(rgb(212, 212, 228), rgb(207, 189, 189));
+  margin: auto;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.login_body {
+  text-align: center;
+}
