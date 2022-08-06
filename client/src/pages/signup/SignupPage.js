@@ -1,8 +1,16 @@
-import React from "react";
-import Login from "../../components/login/Login";
+import React, {useEffect} from "react";
+
 import {Box, Grid} from "@mui/material";
 import Signup from "../../components/signup/Signup";
+import {useNavigate} from "react-router-dom";
 function SignupPage() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    let logStatus = localStorage.getItem("logStatus");
+    if (logStatus) {
+      navigate("/");
+    }
+  }, []);
   return (
     <Box>
       <Grid container sx={{height: "100vh"}}>

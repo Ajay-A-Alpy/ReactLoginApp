@@ -13,6 +13,9 @@ function HomePage() {
     } else {
       logStatus = JSON.parse(logStatus);
       setName(logStatus.currentUser);
+      if (logStatus.currentUser == "Admin") {
+        navigate("/admin");
+      }
     }
   }, []);
   return (
